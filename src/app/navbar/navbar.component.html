@@ -1,0 +1,37 @@
+<div class="board-inner" id="status-buttons">
+    <ul class="nav nav-tabs" id="myTab">
+        <div class="liner"></div>
+                    
+        <!-- circular euro icon -->
+        <li>
+            <a routerLink="/spesa" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" data-toggle="tab" title="Spesa Mensile">
+                <span class="round-tabs one">
+                    <i class="glyphicon glyphicon-euro"></i>
+                </span>
+            </a>
+        </li>
+
+        <!-- circular tasks icon -->
+         <li>
+            <a routerLink="/dati" routerLinkActive="active" data-toggle="tab" title="work">
+                <span class="round-tabs two">
+                    <i class="glyphicon glyphicon-tasks"></i>
+                </span> 
+            </a>
+        </li>
+
+        <!-- circular ok icon -->
+        <li>
+            <a routerLink="/risparmio" routerLinkActive="active" data-toggle="tab" title="completed">
+                <span class="round-tabs four">
+                    <i class="glyphicon glyphicon-ok"></i>
+                </span>
+            </a>
+        </li>
+                
+    </ul>
+    <div class="clearfix"></div>
+</div>
+
+<!-- Close the Splash screen -->
+<script src="assets/js/loading-bars.js"></script>

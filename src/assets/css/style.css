@@ -1,0 +1,46 @@
+.btn-default {
+    border-color: #ccc;
+}
+
+.space-60 {
+    margin-top: 60px;
+}
+
+.space-20 {
+    margin-top: 20px;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success.focus,
+.btn-success.disabled.focus, 
+.btn-success.disabled:focus, 
+.btn-success.disabled:hover, 
+.btn-success[disabled].focus, 
+.btn-success[disabled]:focus, 
+.btn-success[disabled]:hover,
+#status-buttons a.active span.round-tabs {
+    background-color: #cd2026;
+    border-color:#cd2026; 
+    color: #fff;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 15px 25px;
+    line-height: 18px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    text-transform: uppercase;
+    box-shadow: none !important;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+}

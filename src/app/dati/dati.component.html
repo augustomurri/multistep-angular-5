@@ -1,0 +1,28 @@
+<form #datiForm="ngForm" class="editForm" novalidate>
+    <div class="form-horizontal">
+        <div class="tab-pane fade in active">
+            <h4 class="head text-center">{{title}}</h4>
+            <br/>
+            <div class='row'>
+                <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6'>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control input-md" #e="ngModel" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" id="email" name="email" type="text" placeholder="Email" [(ngModel)]="dati.email">
+                        <div class="alert alert-danger" [hidden]="e.valid || e.pristine">Indirizzo e-mail non valido</div>
+                    </div>
+                    <div class="form-check">
+                        <span class="form-check-label">
+                            <input class="form-check-input" [required]="'e.valid'" type="checkbox" [(ngModel)]="dati.privacy" #privacy="ngModel" ng-true-value="'YES'" ng-false-value="'NO'" name="privacy">
+                            Acconsento al trattamento dei dati - normativa sulla <a href="#" rel="nofollow" target="_blank">privacy</a>
+                        </span>
+                        <div class="alert alert-danger" [hidden]="privacy.valid || e.pristine">E' necessario accettare</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-center space-20">
+                <button type="button" class="btn btn-outline-rounded btn-default" (click)="goToPrevious(datiForm)"> <span style="margin-right:10px;" class="glyphicon glyphicon-arrow-left"></span> Indietro</button>
+                <button type="button" class="btn btn-success btn-outline-rounded" (click)="goToNext(datiForm)"> Avanti <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+            </div>
+        </div>
+    </div>
+</form>
