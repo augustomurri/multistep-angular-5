@@ -32,11 +32,8 @@ export class SpesaComponent implements OnInit {
     }
 
     goToNext(form: any) {
-        /*
         if (this.save(form)) {
             this.router.navigate(['/dati']);
         }
-        */        
-        return false;
     }
 }
